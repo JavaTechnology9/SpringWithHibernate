@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 5.3//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.spring.Student" table="student">
+        <id name="id">
+            <generator class="native"/>
+        </id>
+        <property name="name" column="student_name"/>
+        <property name="email" column="student_email"/>
+        <property name="address" column="student_address"/>
+
+    </class>
+
+</hibernate-mapping>
